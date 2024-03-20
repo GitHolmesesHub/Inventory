@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "build-tail": "NODE_ENV=production tailwindcss build -i ./public/styles/tailwindcss.css -o ./public/assets/static/styles.css",
+    "build-tail": "NODE_ENV=production node ./node_modules/tailwindcss/lib/cli.js build -i ./public/styles/tailwindcss.css -o ./public/assets/static/styles.css",
     "build": "NODE_ENV=production npm run build-tail"
   },
   "keywords": [],
