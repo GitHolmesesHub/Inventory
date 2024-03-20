@@ -20,10 +20,10 @@ const PORT = 5000; // Port
 
 // Connect to MySQL
 const db = mysql.createConnection({
-  host: 'kittitat.trueddns.com',
-  user: 'kittitater',
-  password: 'password',
-  database: 'inventory_db'
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'Inventory'
 })
 
 db.connect((err) => {
