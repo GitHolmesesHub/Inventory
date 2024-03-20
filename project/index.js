@@ -16,11 +16,12 @@ const { AddIncomingOrder, DeleteIncoming } = require('./routes/incoming');
 const { AddOutgoingOrder,Deleteoutgoing } = require('./routes/outgoing');
 const { Addreturn, DeleteReturn } = require('./routes/returns');
 
-const PORT = 5000; // Port
+const PORT = 3000; // Port
 
 // Connect to MySQL
 const db = mysql.createConnection({
   host: 'kittitat.trueddns.com',
+  port: '45133',
   user: 'kittitater',
   password: 'password',
   database: 'inventory_db'
